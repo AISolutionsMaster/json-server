@@ -12,7 +12,6 @@ const jsonServer = require('../server')
 function prettyPrint(argv, object, rules) {
   const root = `http://${argv.host}:${argv.port}`
 
-  console.log()
   console.log(chalk.bold('  Resources'))
   for (const prop in object) {
     console.log(`  ${root}/${prop}`)
